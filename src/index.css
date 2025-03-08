@@ -1,0 +1,15 @@
+#root {
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+:root {
+	--default-transition-time: 300ms;
+	--default-transition: all var(--default-transition-time) ease-in-out;
+}

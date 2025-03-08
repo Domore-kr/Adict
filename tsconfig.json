@@ -1,0 +1,21 @@
+{
+	"files": [],
+	"compilerOptions": {
+		"module": "commonjs",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"jsx": "react",
+		"typeRoots": ["./node_modules/@types", "./src/types"],
+		"baseUrl": "src",
+		"paths": {
+			"@res/*": ["res/*"],
+			"@components/*": ["components/*"],
+			"@constants/*": ["constants/*"],
+			"@types/*": ["types/*"]
+		}
+	},
+	"references": [
+		{ "path": "./tsconfig.app.json" },
+		{ "path": "./tsconfig.node.json" }
+	]
+}
