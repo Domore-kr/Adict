@@ -1,0 +1,54 @@
+.root {
+	width: 100%;
+	height: 106px;
+	padding: 24px 6.25vw;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.headerTxt {
+		.Header();
+		max-width: 274px;
+	}
+
+	.logo {
+		cursor: pointer;
+		&.speakers {
+			path {
+				fill: rgba(255, 245, 218, 1);
+			}
+		}
+	}
+
+	.navigationContainer {
+		display: flex;
+		gap: 24px;
+		align-items: center;
+
+		.btn {
+			.defaultBtn();
+			cursor: pointer;
+			&.speakersBtn {
+				border-bottom: 2px dashed #252525;
+
+				&.speakersPage {
+					border-bottom: 2px dashed rgba(255, 245, 218, 1);
+					color: rgba(255, 245, 218, 1);
+				}
+			}
+
+			&.ticketsBtn {
+				color: #d5e1e1;
+				padding: 19.5px 31.8px 19.5px 32px;
+				border-radius: 60px;
+				background: #252525;
+
+				&.speakersPage {
+					color: #252525;
+					background: #fff5da;
+				}
+			}
+		}
+	}
+}

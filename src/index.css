@@ -1,3 +1,9 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('./res/fonts/Inter/Inter_28pt-Light.ttf');
+	font-style: normal;
+}
+
 #root {
 	width: 100vw;
 	height: 100vh;
@@ -6,10 +12,46 @@
 body {
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 :root {
 	--default-transition-time: 300ms;
 	--default-transition: all var(--default-transition-time) ease-in-out;
+	--inter-font: 'Inter', sans-serif;
+}
+
+body,
+p,
+a,
+div,
+button {
+	font-family: var(--inter-font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	font-stretch: 100%;
+	transition: var(--default-transition);
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	user-select: none;
+	outline: none;
+}
+
+section {
+	padding: 80px 6.25vw;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
 }

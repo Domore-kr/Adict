@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
 
 import { HomePage, RegistrationPage, SpeakersPage } from '@components/pages'
+import { Footer, Header } from '@components/Widgets'
 import {
 	NAV_HOME,
 	NAV_REGISTRATION,
@@ -8,20 +9,25 @@ import {
 } from './constants/navigation'
 
 import s from './App.module.less'
+import classNames from 'classnames'
 
 function App() {
 	const { pathname } = useLocation()
 	const location = useLocation()
 
-	console.log(pathname)
-
 	return (
-		<div className={s.root}>
+		<div
+			className={classNames(s.root, {
+				[s.speakersPage]: pathname === NAV_SPEAKERS,
+			})}
+		>
+			<Header />
 			<Routes location={location} key={pathname}>
 				<Route path={NAV_HOME} Component={HomePage} />
 				<Route path={NAV_SPEAKERS} Component={SpeakersPage} />
 				<Route path={NAV_REGISTRATION} Component={RegistrationPage} />
 			</Routes>
+			<Footer />
 		</div>
 	)
 }

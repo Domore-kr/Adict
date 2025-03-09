@@ -1,0 +1,163 @@
+.root {
+	width: 100%;
+
+	.imageSection {
+		width: 100%;
+		height: 720px;
+		position: relative;
+		padding: 0;
+
+		.mainImage {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.buyTicketsSection {
+		width: 100%;
+		height: 430px;
+		background: #1b1464;
+
+		display: flex;
+		justify-content: space-between;
+
+		.txtBlock {
+			display: flex;
+			flex-direction: column;
+			max-width: 34vw;
+
+			.buySubTitleContainer {
+				.subTitleSection();
+				display: flex;
+				align-items: center;
+				gap: 12px;
+			}
+
+			.buyHeader {
+				.buySectionHeader();
+				max-width: 25.625vw;
+				margin-top: 31px;
+			}
+
+			.buyDescription {
+				.sectionDescription();
+				max-width: 25.625vw;
+				margin-top: 24px;
+			}
+		}
+
+		.buyBtn {
+			.buySectionBtn();
+			padding: 83.5px 13.542vw;
+			border-radius: 300px;
+			background: #00f;
+		}
+	}
+
+	.lineupSection {
+		width: 100%;
+		height: 512px;
+		background: #f79cff;
+
+		gap: 64px;
+		display: flex;
+		justify-content: space-between;
+
+		.lineupTxt {
+			max-width: 29.2vw;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 24px;
+
+			.lineupSubTitleContainer {
+				.subTitleSection();
+				color: #252525;
+				display: flex;
+				gap: 12px;
+				align-items: center;
+			}
+
+			.lineupDescription {
+				.sectionDescription();
+				color: #252525;
+			}
+
+			.lineupBtn {
+				.defaultBtn();
+				padding: 19.7px 33.8px 20.29px 34px;
+				border-radius: 80px;
+				border: 2px dashed #252525;
+			}
+		}
+
+		.lineupHeader {
+			display: flex;
+			flex-direction: column;
+			gap: 32px;
+
+			.lineupHeaderTxt {
+				.lineupBigTxt();
+			}
+		}
+	}
+
+	.sponsorsSection {
+		position: relative;
+		background: #fff5da;
+		.sponsorsSubTitle {
+			.subTitleSection();
+			color: #252525;
+			display: flex;
+			gap: 12px;
+			align-items: center;
+
+			.sponsorsIcon {
+				path {
+					fill: rgba(37, 37, 37, 1);
+				}
+			}
+		}
+
+		.sponsorsTitle {
+			.mixinSponsorsTitle();
+			margin-top: 31px;
+		}
+
+		.sponsorsDescription {
+			.sectionDescription();
+			color: #252525;
+			margin-top: 25px;
+			max-width: 647.53px;
+		}
+
+		.sponsorsArray {
+			margin-top: 64px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 48px 60px;
+		}
+
+		.sponsorsBtn {
+			.defaultBtn();
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			margin-top: 84px;
+			padding: 19.7px 33.8px 20.29px 34px;
+
+			border-radius: 80px;
+			border: 2px dashed #252525;
+		}
+	}
+
+	.lineContainer {
+		height: 16px;
+		overflow: hidden;
+		.Line {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
